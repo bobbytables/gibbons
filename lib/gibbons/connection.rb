@@ -1,11 +1,12 @@
 module Gibbons
 	class Connection
+		include HTTParty
 		attr_accessor :site, :prefix, :format
 
 		def initialize(options={})
-			site   = options[:site] if options[:site]
-			prefix = options[:prefix] if options[:prefix]
-			format = options[:format] if options[:format]
+			self.site   = options[:site] if options[:site]
+			self.prefix = options[:prefix] if options[:prefix]
+			self.format = options[:format].to_sym if options[:format]
 		end
 	end
 end

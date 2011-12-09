@@ -1,7 +1,7 @@
 require "gibbons/version"
 
-require 'active_support/concern'
-require 'acctive_support/attribute_accessors'
+require 'active_support/core_ext/class/attribute_accessors'
+require 'active_support/core_ext/class/attribute'
 require 'httparty'
 require 'hashie'
 
@@ -11,4 +11,7 @@ module Gibbons
   		Gibbons::Base.configure(&block)
   	end
   end
+
+  autoload :Base, 'gibbons/base'
+  autoload :Connection, 'gibbons/connection'
 end

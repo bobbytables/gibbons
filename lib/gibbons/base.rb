@@ -10,7 +10,8 @@ module Gibbons
 		class_attribute :format
 
 		def connection
-
+			@connection = Connection.new(:site => self.site, :prefix => self.prefix, :format => :format)
+			@connection
 		end
 	end
 end
