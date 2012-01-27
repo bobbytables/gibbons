@@ -2,7 +2,6 @@ require "gibbons/version"
 
 require 'active_support/core_ext/class/attribute_accessors'
 require 'active_support/core_ext/class/attribute'
-require 'httparty'
 require 'hashie'
 
 module Gibbons
