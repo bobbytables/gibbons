@@ -16,7 +16,6 @@ Gem::Specification.new do |gem|
   gem.version       = Gibbons::VERSION
 
   gem.add_dependency("activesupport", ["~> 3.1"])
-  gem.add_dependency("httparty", ["~> 0.8.1"])
   gem.add_dependency("hashie", ["~> 1.2"])
 
   gem.add_development_dependency("rspec")
